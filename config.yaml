@@ -2,7 +2,7 @@ settings:
   title: 'Status Page'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -25,11 +25,15 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: blog
-    name: joe的博客
+    name: blog
     url: 'https://joesonshaw.top/'
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
     
   - id: 
     name: wakapi
     description: 'Keep Track of Your Coding Time.'
     url: 'https://wakapi.joesonshaw.top/'
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
 
