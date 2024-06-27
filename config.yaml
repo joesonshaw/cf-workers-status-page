@@ -23,17 +23,3 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
-
-  - id: blog
-    name: blog
-    url: 'https://joesonshaw.top/'
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    
-  - id: 
-    name: wakapi
-    description: 'Keep Track of Your Coding Time.'
-    url: 'https://wakapi.joesonshaw.top/'
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-
