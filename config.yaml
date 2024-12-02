@@ -1,6 +1,6 @@
 settings:
   title: '服务状态'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.980712.xyz' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
